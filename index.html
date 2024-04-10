@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link href="https://fonts.cdnfonts.com/css/winston" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="#"><img src="img/logo.svg" alt="bauman go green"></a>
+            </div>
+            <div class="header__wrapper">
+                <ul class="menu menu_main list-reset">
+                    <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="support.html" class="menu__link">Связаться с нами</a></li>
+                </ul>
+            </div>
+            <button onclick="document.location='login.html'" class="header__btn btn">
+                Вход / Регистрация
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__hero hero">
+            <div class="main__container container">
+                <div class="hero__wrapper">
+                    <h1 class="hero__head title head-reset">
+                        <span class="title_green">Рассчитайте корпоративные
+                            <br>выбросы парниковых газов</span>
+                        <br>для целей обязательной отчетности
+                    </h1>
+
+                    <button class="hero__btn btn">
+                        Попробовать рассчитать
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__cards cards">
+            <div class="main__container container">
+                <ul class="cards__list list-reset">
+                    <li class="card">Собираем данные</li>
+                    <li class="card cards__img cards__img_2"></li>
+                    <li class="card cards_3">Рассчитываем результаты</li>
+                    <li class="card cards__img cards__img_4"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main__descr descr bg-grey">
+            <div class="main__container container">
+                <p class="descr__text paragraph-reset">
+                    BaumanGoGreen разработали простой и автоматизированный программный комплекс, который поможет
+                    рассчитать выбросы парниковых газов и сформулировать отчет по установленной форме для регулируемых
+                    организаций.
+                </p>
+                <p class="descr__head paragraph-reset">
+                    Получите результаты, соответствующие требованиям
+                </p>
+                <ul class="descr__list list-reset">
+                    <li class="list__item">ФЗ 296</li>
+                    <li class="list__item">Приказ минприроды 371</li>
+                    <li class="list__item">Постанов. правительства N707</li>
+                    <li class="list__item">Постанов. правительства N1924</li>
+                    <li class="list__item">Приказ минэконом развития 247</li>
+                    <li class="list__item">Постановление правительства 355</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="excel bg-white">
+            <div class="main__container container">
+                <h2 class="main__head head-reset">Попрощайтесь с Excel</h2>
+                <p class="excel__descr paragraph-reset">
+                    Заполнение исходных данных на вас, однако наш user-friendly инструмент сделает этот процесс простым,
+                    понятным и быстрым без необходимости изучения методики и подбора коэффициентов, позволяя максимально
+                    автоматизировать и ускорить подготовку отчетности.
+                </p>
+
+                <!-- tabs -->
+                <div class="tabs">
+                    <ul class="excel__tabs list-reset">
+                        <li class="tabs-nav__item">
+                            <button class="btn tabs__btn tabs__btn--active" data-path="one">Выберите программу
+                                отчетности</button>
+                        </li>
+                        <li class="tabs-nav__item">
+                            <button class="btn tabs__btn" data-path="two">Собирайте данные</button>
+                        </li>
+                        <li class="tabs-nav__item">
+                            <button class="btn tabs__btn" data-path="three">Скачивайте
+                                отчетность</button>
+                        </li>
+                    </ul>
+
+                    <div class="tabs-content">
+                        <div class="tabs-item tabs-item--active" data-target="one">
+                            <img src="img/excel_tab.png" alt="" class="img__pre">
+                            <img src="img/excel_tab.png" alt="" class="img__actual">
+                            <img src="img/excel_tab.png" alt="" class="img__next">
+                        </div>
+
+                        <div class="tabs-item" data-target="two">
+                            <img src="img/excel_tab.png" alt="" class="img__pre">
+                            <img src="img/excel_tab.png" alt="" class="img__actual">
+                            <img src="img/excel_tab.png" alt="" class="img__next">
+                        </div>
+
+                        <div class="tabs-item" data-target="three">
+                            <img src="img/excel_tab.png" alt="" class="img__pre">
+                            <img src="img/excel_tab.png" alt="" class="img__actual">
+                            <img src="img/excel_tab.png" alt="" class="img__next">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="benefits bg-grey">
+            <div class="main__container container">
+                <div class="benefits__fast fast">
+                    <img src="img/benefits-1.png" alt="">
+                    <div class="fast__content">
+                        <h3 class="subtitle_main head-reset">Быстро и просто</h3>
+                        <p class="benefits__descr paragraph-reset">
+                            В один клик формируйте отчетность по результатам расчетов, готовую к сдаче в орган
+                            верификации
+                            парниковых газов. Формируйте цели по снижению выбросов. Проводите бенчмарк проектов в своем
+                            портфолио.
+                            <br><br>
+                            По итогам расчетов пользователь получает заполненную <b>форму отчетности</b>, а также
+                            <b>отчет о проведении расчетов</b>, который содержит в себе описание применяемых формул,
+                            коэффициентов и ссылки
+                            на подтверждающую документацию, необходимую для предоставления в орган верификации и
+                            валидации
+                            парниковых газов.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefits__level level">
+                    <div class="level__content">
+                        <h3 class="subtitle_main head-reset">Высокий уровень доверия</h3>
+                        <p class="benefits__descr paragraph-reset">
+                            Команда разработки представлена ведущими специалистами в области климатической повестки, что
+                            позволяет учесть обширный практический опыт проведения расчетов и подготовки нефинансовой
+                            отчетности, закрывая все потребности в ходе расчетов.
+                            <br><br>
+                            Методологическая часть работы программного обеспечения соответствует нормативно-правовым
+                            актам РФ. Валидировано органом верификации и валидации ИТЦ МГТУ им. Н.Э. Баумана
+                        </p>
+                    </div>
+                    <img src="img/benefits-2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="about bg-white">
+            <div class="main__container container">
+                <h2 class="main__head head-reset">О проекте «BaumanGoGreen»</h2>
+                <div class="alexandrov about__block bg-green">
+                    <img src="img/alexandrov.png" alt="" class="person">
+                    <div class="alexandrov_right">
+                        <p class="alexandrov__text paragraph-reset">
+                            «Данный проект является ответом как на потребности импортозамещения в стратегической области
+                            управления жизненным циклом продукции, так и на новую геополитическую
+                            карбоновую&nbsp;повестку»
+                        </p>
+                        <p class="alexandrov__descr paragraph-reset">
+                            А.А. Александров
+                            <br>Президент МГТУ им. Н.Э. Баумана, д.т.н., профессор
+                        </p>
+                    </div>
+                </div>
+
+                <div class="target about__block bg-grey">
+                    <h3 class="about__head head-reset">Цель</h3>
+                    <p class="about__text paragraph-reset">
+                        минимизация негативного воздействия на природную среду при создании и обращении знаний,
+                        технологий и продуктов путем разработки углеродного калькулятора нового поколения, позволяющего
+                        проводить оценку их углеродного следа с учетом полного жизненного цикла и возможностей природных
+                        экосистем по депонированию углерода
+                    </p>
+                </div>
+
+                <div class="frame about__block bg-green">
+                    <h3 class="about__head head-reset">В рамках проекта</h3>
+                    <p class="about__text paragraph-reset">
+                        помимо программного обеспечения для расчета выбросов парниковых газов для целей обязательной
+                        углеродной отчетности в России, также будут созданы:
+                    <ul class="about__list">
+                        <li class="about__item">карбоновый полигон с системами верхового и низового мониторинга</li>
+                        <li class="about__item">методика оценки потенциала депонирования углерода компонентами
+                            окружающей среды для компенсации негативного воздействия технологий, изделий и их
+                            компонентов на природную среду;</li>
+                        <li class="about__item">База данных и программный комплекс для оценки жизненного цикла</li>
+                        <li class="about__item">разнообразные технологии, ПО, техника и оборудование для проведения
+                            экологических исследований;</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="ivanov about__block bg-grey">
+                    <div class="ivanov__left">
+                        <p class="ivanov__text paragraph-reset">
+                            «Данный проект призван помочь отечественным производителям в оценке и снижении
+                            углеродоемкости
+                            их продукции, государству в совершенствовании систем комплексного экологического
+                            мониторинга, а
+                            научному сообществу в изучении процессов интенсификации депонирования углерода в рамках
+                            карбоновых полигонов»
+                        </p>
+                        <p class="ivanov__descr paragraph-reset">
+                            М.В. Иванов
+                            <br>Руководитель стратегического проекта «BaumanGoGreen», д.т.н., профессор
+                        </p>
+                    </div>
+                    <img src="img/ivanov.png" alt="" class="person">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-grey">
+        <div class="main__container container container_footer">
+            <div class="relations bg-white">
+                <div class="relations_left">
+                    <h2 class="footer__head head-reset">
+                        Свяжитесь с нами
+                    </h2>
+                    <p class="footer__text head-reset">
+                        Есть вопросы о программном комплексе? Хотите подключить свою компанию? По любым вопросам,
+                        будем рады общению!
+                    </p>
+                </div>
+
+                <div class="relations_right">
+                    <form action="" class="form_footer">
+                        <input type="text" name="name" placeholder="Фамилия Имя" class="input">
+                        <input type="email" name="email" id="" placeholder="Email" class="input">
+                        <input type="tel" name="tel" placeholder="Телефон" class="input">
+                        <input type="text" name="company" id="" placeholder="Компания" class="input">
+                        <textarea name="question" id="" cols="30" rows="5" placeholder="Опишите свой вопрос"
+                            class="input"></textarea>
+
+                        <button class="form__btn btn">Отправить</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="contacts bg-white">
+                <h2 class="footer__head head-reset">
+                    Контакты
+                </h2>
+                <p class="contacts__name paragraph-reset">Адрес</p>
+                <p class="contacts__value paragraph-reset">
+                    Москва, 2-я Бауманская ул., 5, стр. 4, каб. 460ю
+                </p>
+
+                <p class="contacts__name paragraph-reset">Электронная почта</p>
+                <p class="contacts__value paragraph-reset">
+                    <a href="mailto:ghg@bmstu.ru">ghg@bmstu.ru</a>
+                </p>
+
+                <p class="contacts__name paragraph-reset">Время работы</p>
+                <p class="contacts__value paragraph-reset">
+                    ПН-ПТ&nbsp;&nbsp;9:00-18:00
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>

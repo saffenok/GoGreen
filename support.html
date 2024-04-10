@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщить о проблеме</title>
+    <link href="https://fonts.cdnfonts.com/css/winston" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="body body__new-project">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logo.svg" alt="bauman go green"></a>
+            </div>
+            <div class="header__wrapper">
+                <ul class="menu list-reset">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="support.html" class="menu__link">Связаться с нами</a></li>
+                    <li class="menu__item">
+                        <div class="dropdown">
+                            <button class="btn dropdown__btn">
+                                <span class="menu__link">Тучин Михаил</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10.5L12.0008 15.08L17 10.5" stroke="#1A1A19" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="dropdown__content pa">
+                                <div class="pa__top">
+                                    <img src="img/pa-icon.svg" alt="icon" class="pa__icon">
+                                    <div class="pa__wrapper">
+                                        <p class="pa__name paragraph-reset">Тучин Михаил</p>
+                                        <span class="pa__email">mishkatuchin@mail.ru</span>
+                                    </div>
+                                </div>
+                                <!-- <hr> -->
+                                <div class="pa__bottom">
+                                    <ul class="pa__list list list-reset">
+                                        <li class="list__item"><a href="pa-profile.html">Личный кабинет</a></li>
+                                        <li class="list__item"><a href="my-projects.html">Мои проекты</a></li>
+                                        <li class="list__item"><a href="support.html">Поддержка</a></li>
+                                    </ul>
+                                    <!-- <hr> -->
+                                    <ul class="list list-reset">
+                                        <li class="list__item list__item_out"><a href="index.html">Выйти</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container container">
+            <div class="breadcrumb">
+                <ul class="breadcrumb__list list list-reset">
+                    <li class="list__item list__item_main"><a href="index.html"
+                            class="list__link list__link_main">Главная</a></li>
+                    <li class="list__item"><a href="support.html" class="list__link">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main__content support">
+                <h1 class="title support__title head-reset">Сообщить о проблеме</h1>
+                <p class="support__descr paragraph-reset">
+                    В случае, если вы столкнулись со сложностями или обнаружили проблему в работе, пожалуйста, опишите
+                    ситуацию.
+                </p>
+                <p class="support__descr support__descr_form paragraph-reset">
+                    Подробно расскажите о своей ситуации
+                </p>
+
+                <form action="">
+                    <textarea name="problem" id="" class="form__textarea"></textarea>
+
+                    <div class="form__btns">
+                        <button class="form__btn btn" id="btn-success-mess">Отправить</button>
+
+                        <button class="form__btn btn btn_cancel">Отменить</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="wrapper" id="wrapper">
+                <div class="message" id="message">
+                    <p class="message__text paragraph-reset">
+                        Спасибо за обратную связь.
+                        <br>Мы приступаем к решению проблемы и обязательно с вами свяжемся по итогам работы!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>

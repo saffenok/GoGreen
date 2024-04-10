@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="https://fonts.cdnfonts.com/css/winston" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logo.svg" alt="bauman go green"></a>
+            </div>
+            <div class="header__wrapper">
+                <ul class="menu list-reset">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                    <li class="menu__item"><a href="support.html" class="menu__link">Связаться с нами</a></li>
+                    <li class="menu__item">
+                        <div class="dropdown">
+                            <button class="btn dropdown__btn">
+                                <span class="menu__link">Тучин Михаил</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10.5L12.0008 15.08L17 10.5" stroke="#1A1A19" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="dropdown__content pa">
+                                <div class="pa__top">
+                                    <img src="img/pa-icon.svg" alt="icon" class="pa__icon">
+                                    <div class="pa__wrapper">
+                                        <p class="pa__name paragraph-reset">Тучин Михаил</p>
+                                        <span class="pa__email">mishkatuchin@mail.ru</span>
+                                    </div>
+                                </div>
+                                <!-- <hr> -->
+                                <div class="pa__bottom">
+                                    <ul class="pa__list list list-reset">
+                                        <li class="list__item"><a href="pa-profile.html">Личный кабинет</a></li>
+                                        <li class="list__item"><a href="my-projects.html">Мои проекты</a></li>
+                                        <li class="list__item"><a href="support.html">Поддержка</a></li>
+                                    </ul>
+                                    <!-- <hr> -->
+                                    <ul class="list list-reset">
+                                        <li class="list__item list__item_out"><a href="index.html">Выйти</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container container">
+            <div class="breadcrumb">
+                <ul class="breadcrumb__list list list-reset">
+                    <li class="list__item list__item_main"><a href="index.html"
+                            class="list__link list__link_main">Главная</a></li>
+                    <li class="list__item"><a href="new-project.html" class="list__link">Личный кабинет</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lk">
+                <h1 class="lk__head title title_new head-reset">Личный кабинет</h1>
+            </div>
+
+            <div class="lk__tabs">
+                <div class="tabs-item1_left item_lk">
+                    <ul class="content__menu_lk tabs-nav_lk list-reset">
+                        <li class="tabs-nav__item_lk">
+                            <button class="btn tabs-nav__btn_lk tabs-nav__btn_lk--active tabs-nav_first"
+                                data-path="one-lk">Профиль</button>
+                        </li>
+                        <li class="tabs-nav__item_lk">
+                            <button class="btn tabs-nav__btn_lk" data-path="two-lk">Пароль</button>
+                        </li>
+                        <li class="tabs-nav__item_lk">
+                            <button class="btn tabs-nav__btn_lk tabs-nav_last" data-path="three-lk">История
+                                заказов</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabs-item1_right">
+                    <div class="tabs-content_lk">
+
+                        <div class="tabs-item_lk tabs-item_lk--active" data-target="one-lk">
+                            <h2 class="tabs-item__head head-reset">Личные данные</h2>
+                            <div class="hidden3"></div>
+
+                            <form action="" class=" form_general-information">
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Email</legend>
+                                    <input type="email" name="Email" id="" class="fields__input">
+                                </fieldset>
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Фамилия</legend>
+                                    <input type="text" name="Фамилия" id="" class="fields__input">
+                                </fieldset>
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Имя</legend>
+                                    <input type="text" name="Имя" id="" class="fields__input">
+                                </fieldset>
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Компания</legend>
+                                    <input type="text" name="Компания" id="" class="fields__input">
+                                </fieldset>
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Должность</legend>
+                                    <input type="text" name="Должность" id="" class="fields__input">
+                                </fieldset>
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Город</legend>
+                                    <input type="text" name="Город" id="" class="fields__input">
+                                </fieldset>
+
+                                <button class="form__btn btn" id="btn-prof">Сохранить изменения</button>
+                                <button class="form__btn btn btn_cancel">Отменить</button>
+                            </form>
+                        </div>
+
+                        <div class="tabs-item_lk" data-target="two-lk">
+                            <h2 class="tabs-item__head head-reset">Изменить пароль</h2>
+                            <div class="hidden3"></div>
+
+                            <form action="" class=" form_general-information">
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Новый пароль</legend>
+                                    <input type="password" name="Новый пароль" id="" class="fields__input">
+                                </fieldset>
+                                <fieldset class="fields fields_lk fieldset-reset">
+                                    <legend class="fields__name">Повторите новый пароль</legend>
+                                    <input type="password" name="Повторите новый пароль" id="" class="fields__input">
+                                </fieldset>
+
+                                <button class="form__btn btn" id="btn-pass">Сохранить изменения</button>
+                                <button class="form__btn btn btn_cancel">Отменить</button>
+                            </form>
+                        </div>
+
+                        <div class="tabs-item_lk" data-target="three-lk">
+                            <h2 class="tabs-item__head head-reset">История заказов</h2>
+                            <div class="hidden3"></div>
+                            <div class="history">
+                                <h3 class="tabs-item__subtitle head-reset">
+                                    Текущаю подписка
+                                </h3>
+                                <p class="tabs-item__sub paragraph-reset">
+                                    У вас нет текущей подписки
+                                </p>
+
+                                <h3 class="tabs-item__subtitle head-reset">
+                                    История оплат
+                                </h3>
+                                <table class="tabs-item__payment table_lk" border="0" style="border-collapse: collapse;">
+                                    <thead>
+                                        <tr class="table__h">
+                                            <th>Номер заказа</th>
+                                            <th>Наименования</th>
+                                            <th>Дата</th>
+                                            <th>Стоимость</th>
+                                            <th>Статус</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table__tr">
+                                            <td>7665576</td>
+                                            <td>Test</td>
+                                            <td>13.09.2023</td>
+                                            <td>1 230,00</td>
+                                            <td>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                                                    viewBox="0 0 11 10" fill="none">
+                                                    <circle cx="5.7002" cy="5" r="5" fill="#E33535" />
+                                                </svg>
+                                                Text
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper" id="wrapper_prof">
+                <div class="message" id="message">
+                    <p class="message__text paragraph-reset">
+                        Данные успешно обновлены
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper" id="wrapper_pass">
+                <div class="message" id="message">
+                    <p class="message__text paragraph-reset">
+                        Пароль успешно изменен
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

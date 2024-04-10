@@ -1,0 +1,105 @@
+@media (max-width: 1200px) {
+  .tabs__btn {
+    width: 310px;
+    font-size: 14px;
+  }
+
+  .relations {
+    width: 660px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    gap: 60px;
+  }
+
+  .menu__link {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .dropdown__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .list__link {
+    font-size: 12px;
+  }
+
+  .table__head {
+    font-size: 12px;
+  }
+
+  .choices__item {
+    font-size: 12px;
+  }
+
+  .choices[data-type*=select-one]::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  td {
+    padding-right: 5px;
+  }
+
+  .tabs-item1_left {
+    width: 30%;
+  }
+
+  .tabs-item1_right {
+    width: 67%;
+  }
+
+  .content__menu2 {
+    width: 600px;
+  }
+
+  .tabs-nav__btn2 {
+    width: 300px;
+  }
+
+  .fields {
+    width: 600px;
+  }
+
+  .fields_lk {
+    width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    gap: 40px;
+  }
+
+  .menu_main {
+    gap: 30px;
+  }
+
+  .menu__link {
+    font-size: 12px;
+  }
+
+  .dropdown__btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 10px;
+  }
+}
